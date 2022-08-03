@@ -1,0 +1,46 @@
+<!-- 
+This file uses Prompt2.java and displays a webpage with a textbox for user name and name,
+plus a switch for selecting gender and a dropdown box for selecting the class.
+Finally, it also contains 3 checkboxes to determine which coding languages you know.
+It also has a button to confirm when done which redirects you to the next page.
+ -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+	<form action="./Reg" method="POST">
+		<table>
+			<tr>
+				<td>User Name : <input type="text" name="username" />
+				</td>
+			</tr>
+			<tr>
+				<td>Name : <input type="text" name="name" />
+				</td>
+			</tr>
+			<tr>
+				<td>Gender : <input type="radio" name="gender" value="Male" />
+					Male <input type="radio" name="gender" value="Female" /> Female
+				</td>
+			</tr>
+			<tr>
+				<td>Java <input type="checkbox" name="language" value="Java" />
+					C++ <input type="checkbox" name="language" value="C++" /> Python <input
+					type="checkbox" name="language" value="Python" />
+				</td>
+			</tr>
+			<tr>
+				<td>Class List : <select name="classID">
+						<option value="CS 1336">CS 1336</option>
+						<option value="CS 1337">CS 1337</option>
+						<option value="CS 2336">CS 2336</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Register" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
